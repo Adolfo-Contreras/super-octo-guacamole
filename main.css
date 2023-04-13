@@ -1,0 +1,175 @@
+/*  for the big boys also i suck at css and i think that is what im weakest at  and csslint warned me about some problems   */
+html, body, div, p, input,h1,h3,h5, img{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'Raleway', sans-serif;
+}
+body{
+    background-color: #f6f6f6;
+}
+#container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*  for the main post  */
+
+    #mainPost{
+        background-color: white;
+        width: 90%;
+        z-index: 2;
+        position: fixed;
+    }
+
+#mainUser{
+    margin: 20px 10px 0 10px;
+    padding: 5px;
+    font-weight: 200;
+    font-size: 14pt;
+    font-family: 'Schibsted Grotesk', sans-serif;
+}
+#OGpost{
+    margin: 5px 5px 10px 5px ;
+    padding: 5px;
+    word-wrap: break-word;
+    font-weight: 400; 
+    font-size: 26pt;
+    font-family: 'Schibsted Grotesk', sans-serif;
+}
+
+/*  for where the comments go  */
+
+.commentContainer{
+    z-index: 1;
+    width:90% ;
+    height: 60%;
+    background-color: #eee ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top:112px;
+    order: 2;
+    padding-bottom: 115px;
+}
+
+/*  for the comments  */
+
+.comment{
+    width: 95%;
+    background-color: white;
+    margin-top: 35px;    
+    display: flex;
+    flex-flow: column;
+   }
+   .commentData{
+display: flex;
+margin: 10px 10px 10px 100px;
+width: 90%;
+font-size: 15pt;
+   }
+   .pfp{
+    width: 60px;
+    height: 60px;
+    padding: 20px;
+    position: absolute;
+   }
+.commentText{
+font-size: 20pt;
+margin: 10px 10px 10px 100px;
+flex-grow: 2;
+}
+.commentorText{
+    margin: 10px;
+    font-size: 18pt;
+}
+.username{
+    font-weight: 400;
+    margin: 10px;
+    display: inline-block;
+    flex-grow: 2;
+}
+.editing{
+    margin: 10px 10px 10px 100px;
+    display: flex;
+}
+
+
+/*  for the buttons and such  */
+
+.MakeEdit{
+    display: inline-block;
+    flex-grow: 2;
+    border: 2px solid #dbdbdb;
+    border-radius: 3px;
+    margin: 10px;
+    }
+    .submitEdit{
+    display: inline-block;
+    flex-grow: 1;
+    color: #acd7e5;
+    margin: 10px;
+    }
+.buttonHighlight{
+    cursor: pointer;
+    background-color: #eeeeee;
+}
+
+.editButton{
+color: #acd7e5;
+display: inline-block;
+margin: 5px;
+}
+.deleteButton{
+color: #acd7e5;
+display: inline-block;
+margin: 5px;
+}
+
+
+/*  for the comment creator   */
+
+
+#commentCreator{
+    position: fixed;
+    bottom: 0;
+    background-color: white;
+    height: 80px;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    z-index: 2;
+    font-size: larger;
+    
+}
+
+#submitComment{
+    margin: 10px 20px 10px 5px;
+    color: #acd7e5;
+    height: 35px;
+    display: flex;
+    align-items: center;
+}
+#submitCommentButton{
+    text-align: center;
+}
+#nameInput{
+border: 2px solid #dbdbdb;
+border-radius: 3px;
+height: 35px;
+margin: 10px 5px 10px 20px;
+}
+
+#commentInput{
+border: 2px solid #dbdbdb;
+border-radius: 3px;
+height: 35px;
+flex-grow: 2;
+margin: 5px;
+}
+
+.hidden{
+    display: none;
+}
